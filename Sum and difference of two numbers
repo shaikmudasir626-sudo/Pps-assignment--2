@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a, b;
+    float c, d;
+    
+    // Corrected: Removed '\n' from format string
+    scanf("%d %d %f %f", &a, &b, &c, &d);
+    
+    // Prints sum and difference of integers, then floats rounded to 1 decimal place
+    printf("%d %d\n%.1f %.1f", a + b, a - b, c + d, c - d);
+    
+    return 0;
+}
